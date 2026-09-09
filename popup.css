@@ -1,0 +1,45 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  min-width: 340px;
+}
+main { padding: 14px; }
+h1 { font-size: 18px; margin: 0 0 4px; }
+h2 { font-size: 14px; margin: 16px 0 8px; }
+.muted { opacity: .7; overflow-wrap: anywhere; }
+.small { font-size: 12px; min-height: 18px; margin-top: 5px; }
+.row, .toggleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+select, button { font: inherit; }
+button {
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: 7px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.primary { font-weight: 600; }
+section > label { display: block; margin: 6px 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.chip {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+  border-radius: 999px;
+  padding: 4px 8px;
+}
+.chip button {
+  border: 0;
+  padding: 0 2px;
+  background: transparent;
+  font-weight: bold;
+}
+.actions { display: flex; gap: 8px; margin-top: 18px; }
+.status { min-height: 20px; margin-top: 8px; font-size: 12px; }
